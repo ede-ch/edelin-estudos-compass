@@ -1,4 +1,4 @@
-const estagiarios = [
+const interns = [
   "André Luiz",
   "Angelo de Oliveira",
   "Antonio Francisco",
@@ -35,40 +35,40 @@ const estagiarios = [
 ];
 
 // Função para adicionar os nomes de forma dinâmica.
-const lista = document.querySelector("#list");
-estagiarios.forEach((estagiario) => {
-  const itemLista = document.createElement("li");
-  itemLista.classList.add("card");
-  itemLista.innerHTML = `
+const list = document.querySelector("#list");
+interns.forEach((intern) => {
+  const listItem = document.createElement("li");
+  listItem.classList.add("card");
+  listItem.innerHTML = `
   <div class="profile-card">
     <div class="info">
-      <h3>${estagiario}</h3>
-      <p>${gerarEmail(estagiario)}</p>
+      <h3>${intern}</h3>
+      <p>${generateEmail(intern)}</p>
     </div>
   </div>
 `;
-  lista.appendChild(itemLista);
+  list.appendChild(listItem);
 });
 
 // Função para gerar os emails a partir do nome.
-function gerarEmail(nome) {
-  const nomeEmail = nome
+function generateEmail(name) {
+  const Emailname = name
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .replace(/\s+/g, ".")
     .replace(/[^\w.]+/g, "");
-  return `${nomeEmail}@pb.com`;
+  return `${Emailname}@pb.com`;
 }
 
 // Função de pesquisa.
-const pesquisa = document.querySelector("#search");
-pesquisa.addEventListener("input", () => {
-  const valor = pesquisa.value.toLowerCase();
-  const itens = lista.getElementsByTagName("li");
-  Array.from(itens).forEach((item) => {
-    const texto = item.textContent.toLowerCase();
-    if (texto.indexOf(valor) !== -1) {
+const searchInput = document.querySelector("#search");
+searchInput.addEventListener("input", () => {
+  const value = searchInput.value.toLowerCase();
+  const items = list.getElementsByTagName("li");
+  Array.from(items).forEach((item) => {
+    const text = item.textContent.toLowerCase();
+    if (text.indexOf(value) !== -1) {
       item.style.display = "block";
     } else {
       item.style.display = "none";
