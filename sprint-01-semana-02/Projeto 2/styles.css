@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  background-image: url("images/fundo.gif");
+  background-size: cover;
+  background-position: center;
+  padding: 0 20px;
+  min-height: 100vh;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 35px 0;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 70px;
+  margin: 0;
+  text-shadow: 0px 0px 2px #e4e4e4;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 3px 0;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 0px 4px #e4e4e4;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  margin-top: -10px;
+}
+
+.social-link {
+  color: #fff;
+  font-size: 40px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #9e49db;
+}
+
+.technical-skills {
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  margin-top: -30px;
+  text-shadow: 0px 0px 4px #e4e4e4;
+}
+
+.technical-skills h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.skill {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.skill span {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.progress {
+  background-color: #9e49db;
+  height: 100%;
+  transition: width 0.3s;
+}
