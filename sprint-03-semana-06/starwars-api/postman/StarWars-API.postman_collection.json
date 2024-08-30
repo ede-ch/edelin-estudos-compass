@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "ea28a1aa-fc12-4594-af32-30ce0b08520a",
+		"name": "StarWars-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37891821"
+	},
+	"item": [
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Rogue One\",\r\n    \"description\": \"Jyn Erso é uma garota irreverente e habilidosa chamada para participar de uma equipe incumbida de roubar os planos da Estrela da Morte, a estação espacial do Império Galático com potencial para destruir planetas. A ideia é descobrir como a arma funciona, para que então a Aliança Rebelde possa lançar um ataque e destruí-la.\",\r\n    \"image_url\": \"https://upload.wikimedia.org/wikipedia/pt/6/62/Rogue_One_-_A_Star_Wars_Story.jpg\",\r\n    \"trailer_url\": \"https://www.youtube.com/watch?v=frdj1zb9sMY\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
