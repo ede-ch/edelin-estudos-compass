@@ -1,9 +1,9 @@
 const express = require('express'); 
 const mongoose = require('mongoose');
-const registroRoutes = require('./routes/registroRoutes');
+const registroRoutes = require('./routes/registroRoutes'); 
 
 const app = express();
-const port = 3000;
+const port = 3001;
 
 // Middleware para processar JSON
 app.use(express.json());
