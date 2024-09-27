@@ -25,7 +25,7 @@ exports.updateRegistro = async (req, res) => {
     if (!registro) {
       return res.status(404).send({ message: 'Registro não encontrado' });
     }
-    res.status(200).send(registro); // Retornar o registro atualizado
+    res.status(200).send(registro); 
   } catch (error) {
     res.status(400).send({ message: 'Erro ao atualizar registro', error });
   }

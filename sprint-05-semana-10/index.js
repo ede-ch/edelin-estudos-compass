@@ -18,7 +18,6 @@ mongoose.connect('mongodb+srv://edelinsantospb:5TjB1TBADgwdgZVg@registro-api.ozl
 });
 
 
-// Usar rotas
 app.use('/registros', registroRoutes);
 
 // Middleware de erro
@@ -27,7 +26,7 @@ app.use((err, req, res, next) => {
   res.status(500).send({ message: 'Algo deu errado!', error: err.message });
 });
 
-// Iniciar o servidor
+
 app.listen(port, () => {
   console.log(`App rodando na porta ${port}`);
 });
